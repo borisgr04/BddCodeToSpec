@@ -1,0 +1,28 @@
+Summary:
+	Test execution start time       : 2020-12-13 17:30:43 UTC
+	Test execution end time         : 2020-12-13 17:30:43 UTC
+	Test execution time             : 29ms
+	Test execution time (aggregated): 29ms
+	Number of features              : 1
+	Number of scenarios             : 1
+	Passed scenarios                : 1
+	Bypassed scenarios              : 0
+	Failed scenarios                : 0
+	Ignored scenarios               : 0
+	Number of steps                 : 3
+	Passed steps                    : 3
+	Bypassed steps                  : 0
+	Failed steps                    : 0
+	Ignored steps                   : 0
+	Not Run steps                   : 0
+
+Feature: Consignacion Feature [Story-1]
+	In order to access personal data
+	    As an user
+	    I want to login into system
+
+	Scenario: Successful consignacion [Ticket-1] - Passed (29ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial - Passed (9ms)
+		Step 2: Cuando consigno - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es - Passed (3ms)

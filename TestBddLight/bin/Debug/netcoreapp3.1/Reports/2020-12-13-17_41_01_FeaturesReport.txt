@@ -1,0 +1,55 @@
+Summary:
+	Test execution start time       : 2020-12-13 17:41:01 UTC
+	Test execution end time         : 2020-12-13 17:41:01 UTC
+	Test execution time             : 136ms
+	Test execution time (aggregated): 160ms
+	Number of features              : 2
+	Number of scenarios             : 3
+	Passed scenarios                : 2
+	Bypassed scenarios              : 0
+	Failed scenarios                : 1
+	Ignored scenarios               : 0
+	Number of steps                 : 9
+	Passed steps                    : 8
+	Bypassed steps                  : 0
+	Failed steps                    : 1
+	Ignored steps                   : 0
+	Not Run steps                   : 0
+
+Feature: Consignacion Feature [Story-1]
+	In order to access personal data
+	    As an user
+	    I want to login into system
+
+	Scenario: Successful consignacion [Ticket-1] - Passed (30ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial - Passed (8ms)
+		Step 2: Cuando consigno - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es - Passed (4ms)
+
+Feature: ConsignacionConParametrosFeature [Story-1]
+	In order to access personal data
+	    As an user
+	    I want to login into system
+
+	Scenario: Successful consignacion [Caso-1] - Passed (30ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: "1000"] - Passed (<1ms)
+		Step 2: Cuando consigno [valorConsignar: "100"] - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es [saldoFinal: "1100"] - Passed (4ms)
+
+	Scenario: Successful consignacion caso2 [Caso-2] - Failed (100ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: "1000"] - Passed (<1ms)
+		Step 2: Cuando consigno [valorConsignar: "200"] - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es [saldoFinal: "1300"] - Failed (96ms)
+		Details:
+			Step 3: NUnit.Framework.AssertionException : Expected sut.Saldo to be 1300M, but found 1200M.
+				at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+				at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+				at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+				at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+				at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+				at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+				at FluentAssertions.Numeric.NumericAssertions`1.Be(T expected, String because, Object[] becauseArgs)
+				at TestBddLight.ConsignacionConParametrosFeature.Entonces_mi_nuevo_saldo_es(Decimal saldoFinal) in C:\Users\LENOVO\source\repos\TestBddToolKit\TestBddLight\ConsignacionFeature.cs:line 57

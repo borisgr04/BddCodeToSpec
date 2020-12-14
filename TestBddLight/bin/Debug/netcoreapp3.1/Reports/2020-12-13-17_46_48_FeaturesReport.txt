@@ -1,0 +1,45 @@
+Summary:
+	Test execution start time       : 2020-12-13 17:46:48 UTC
+	Test execution end time         : 2020-12-13 17:46:48 UTC
+	Test execution time             : 38ms
+	Test execution time (aggregated): 63ms
+	Number of features              : 2
+	Number of scenarios             : 3
+	Passed scenarios                : 3
+	Bypassed scenarios              : 0
+	Failed scenarios                : 0
+	Ignored scenarios               : 0
+	Number of steps                 : 9
+	Passed steps                    : 9
+	Bypassed steps                  : 0
+	Failed steps                    : 0
+	Ignored steps                   : 0
+	Not Run steps                   : 0
+
+Feature: ConsignacionConParametrosFeature [Story-1]
+	Para ahorrar mi dinero
+	    Como usuario
+	    Quiero consignar en cuenta bancaria
+
+	Scenario: Successful consignacion [Caso-1] - Passed (30ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: "1000"] - Passed (<1ms)
+		Step 2: Cuando consigno [valorConsignar: "100"] - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es [saldoFinal: "1100"] - Passed (4ms)
+
+	Scenario: Successful consignacion caso2 [Caso-2] - Passed (3ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: "1000"] - Passed (<1ms)
+		Step 2: Cuando consigno [valorConsignar: "200"] - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es [saldoFinal: "1200"] - Passed (<1ms)
+
+Feature: ConsignacionSencillaFeature [Story-1]
+	Para ahorrar mi dinero
+	    Como usuario
+	    Quiero consignar en cuenta bancaria
+
+	Scenario: Successful consignacion [Ticket-1] - Passed (30ms)
+		Categories: Security
+		Step 1: Dado que tengo cuenta bancaria con saldo inicial - Passed (8ms)
+		Step 2: Cuando consigno - Passed (<1ms)
+		Step 3: Entonces mi nuevo saldo es - Passed (4ms)

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestResults>
+  <Summary TestExecutionStart="2020-12-13T17:47:33.9397452Z" TestExecutionEnd="2020-12-13T17:47:33.9787099Z" TestExecutionTime="PT0.0389647S">
+    <Features Count="2" />
+    <Scenarios Count="3" Passed="3" Bypassed="0" Failed="0" Ignored="0" />
+    <Steps Count="9" Passed="9" Bypassed="0" Failed="0" Ignored="0" NotRun="0" />
+  </Summary>
+  <Feature Name="ConsignacionConParametrosFeature" RuntimeId="cefa7aeb-ae20-4e7f-adc8-c1623cb32a88">
+    <Label Name="Story-1" />
+    <Description>Para ahorrar mi dinero
+    Como usuario
+    Quiero consignar en cuenta bancaria</Description>
+    <Scenario Status="Passed" Name="Successful consignacion" ExecutionStart="2020-12-13T17:47:33.9397452Z" ExecutionTime="PT0.0306809S" RuntimeId="147128a8-33b1-4b73-9f46-72a9ae0590d1">
+      <Name Format="Successful consignacion" />
+      <Label Name="Caso-1" />
+      <Category Name="Security" />
+      <Step Status="Passed" Number="1" Name="Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: &quot;1000&quot;]" ExecutionStart="2020-12-13T17:47:33.9602185Z" ExecutionTime="PT0.0004734S" RuntimeId="19325599-74be-4461-948f-411aa6b5a50e">
+        <StepName Format="Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">1000</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="2" Name="Cuando consigno [valorConsignar: &quot;100&quot;]" ExecutionStart="2020-12-13T17:47:33.9635714Z" ExecutionTime="PT0.0004989S" RuntimeId="9337d45c-0634-467b-baba-5fa1ed57bb39">
+        <StepName Format="Cuando consigno [valorConsignar: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">100</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="Entonces mi nuevo saldo es [saldoFinal: &quot;1100&quot;]" ExecutionStart="2020-12-13T17:47:33.9641214Z" ExecutionTime="PT0.0048308S" RuntimeId="f9aea528-19ae-47e1-a5c6-81cf80ed15b6">
+        <StepName Format="Entonces mi nuevo saldo es [saldoFinal: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">1100</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+    <Scenario Status="Passed" Name="Successful consignacion caso2" ExecutionStart="2020-12-13T17:47:33.9761614Z" ExecutionTime="PT0.0025485S" RuntimeId="b97bd1ff-defc-42fd-bb24-e3f83fa0a5b4">
+      <Name Format="Successful consignacion caso2" />
+      <Label Name="Caso-2" />
+      <Category Name="Security" />
+      <Step Status="Passed" Number="1" Name="Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: &quot;1000&quot;]" ExecutionStart="2020-12-13T17:47:33.978587Z" ExecutionTime="PT0.0000324S" RuntimeId="9db14f97-a950-4d22-a652-c43c1bf89160">
+        <StepName Format="Dado que tengo cuenta bancaria con saldo inicial [saldoInicial: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">1000</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="2" Name="Cuando consigno [valorConsignar: &quot;200&quot;]" ExecutionStart="2020-12-13T17:47:33.9786395Z" ExecutionTime="PT0.0000199S" RuntimeId="1c9f49a1-7dbf-4ae2-81c6-c8519e796ba1">
+        <StepName Format="Cuando consigno [valorConsignar: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">200</Parameter>
+        </StepName>
+      </Step>
+      <Step Status="Passed" Number="3" Name="Entonces mi nuevo saldo es [saldoFinal: &quot;1200&quot;]" ExecutionStart="2020-12-13T17:47:33.9786712Z" ExecutionTime="PT0.0000238S" RuntimeId="5756cfde-ee5e-43d3-acbb-d4eddbe9e765">
+        <StepName Format="Entonces mi nuevo saldo es [saldoFinal: &quot;{0}&quot;]">
+          <Parameter IsEvaluated="true">1200</Parameter>
+        </StepName>
+      </Step>
+    </Scenario>
+  </Feature>
+  <Feature Name="ConsignacionSencillaFeature" RuntimeId="26e3b690-f731-4bfa-8782-c5f5a0497eb9">
+    <Label Name="Story-1" />
+    <Description>Para ahorrar mi dinero
+    Como usuario
+    Quiero consignar en cuenta bancaria</Description>
+    <Scenario Status="Passed" Name="Successful consignacion" ExecutionStart="2020-12-13T17:47:33.9397861Z" ExecutionTime="PT0.0306186S" RuntimeId="a6a73a77-88ca-49dd-88ba-6a961826db93">
+      <Name Format="Successful consignacion" />
+      <Label Name="Caso sin parametros" />
+      <Category Name="Security" />
+      <Step Status="Passed" Number="1" Name="Dado que tengo cuenta bancaria con saldo inicial" ExecutionStart="2020-12-13T17:47:33.9499289Z" ExecutionTime="PT0.0090616S" RuntimeId="6c03dff8-f290-4cfe-9743-ade4c82bb546">
+        <StepName Format="Dado que tengo cuenta bancaria con saldo inicial" />
+      </Step>
+      <Step Status="Passed" Number="2" Name="Cuando consigno" ExecutionStart="2020-12-13T17:47:33.9635777Z" ExecutionTime="PT0.0004861S" RuntimeId="2ac7cf1d-3328-48c1-bcf3-34c9f3d9c310">
+        <StepName Format="Cuando consigno" />
+      </Step>
+      <Step Status="Passed" Number="3" Name="Entonces mi nuevo saldo es" ExecutionStart="2020-12-13T17:47:33.9641094Z" ExecutionTime="PT0.0048369S" RuntimeId="49836770-7f13-4a64-82b7-ad8962f06870">
+        <StepName Format="Entonces mi nuevo saldo es" />
+      </Step>
+    </Scenario>
+  </Feature>
+</TestResults>
